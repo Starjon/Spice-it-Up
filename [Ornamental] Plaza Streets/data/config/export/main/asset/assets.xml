@@ -121,26 +121,28 @@
     <!-- Promenade Paving -->
     <ModOp GUID='269303' Type="addNextSibling">
         <Asset>
-            <BaseAssetGUID>269303</BaseAssetGUID>
-            <AddedProperties>
-                <Street>
-                    <InternalID>302</InternalID>
-                </Street>
-            </AddedProperties>
+            <Template>AdditionalModule</Template>
             <Values>
                 <Standard>
                     <GUID>1440134608</GUID>
                     <Name>Promenade (Street)</Name>
                     <InfoDescription>1440134605</InfoDescription>
+                    <IconFilename>data/ui/2kimages/main/3dicons/ornaments/palace_ornament/icon_ornament_straight_promenade.png</IconFilename>
                 </Standard>
-                <Text />
-                <Blocking>
-                    <GroundDecalAsset>9898765</GroundDecalAsset>
-                    <GroundDecalInvisible>9898765</GroundDecalInvisible>
-                    <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
-                </Blocking>
+                <Text>
+                    <LocaText>
+                    <English>
+                        <Text>Promenade</Text>
+                        <Status>Exported</Status>
+                        <ExportCount>5</ExportCount>
+                    </English>
+                    </LocaText>
+                    <LineID>36409</LineID>
+                </Text>
                 <Building>
-                    <AssociatedRegions>Moderate;Colony01</AssociatedRegions>
+                    <BuildingCategoryName>11153</BuildingCategoryName>
+                    <BuildModeRandomRotation>90</BuildModeRandomRotation>
+                    <SecondPartyRelevant>0</SecondPartyRelevant>
                     <InfluencedByNeighbors>
                         <Item>
                             <Building>1440134608</Building>
@@ -149,20 +151,225 @@
                             <Building>269303</Building>
                         </Item>
                     </InfluencedByNeighbors>
+                    <InfluencedVariationDirection>
+                        <Item />
+                        <Item>
+                            <Direction>2</Direction>
+                            <Type>End</Type>
+                        </Item>
+                        <Item>
+                            <Direction>3</Direction>
+                            <Type>End</Type>
+                        </Item>
+                        <Item>
+                            <Direction>1</Direction>
+                            <Type>Corner</Type>
+                        </Item>
+                        <Item>
+                            <Type>End</Type>
+                        </Item>
+                        <Item>
+                            <Type>Mid</Type>
+                        </Item>
+                        <Item>
+                            <Direction>2</Direction>
+                            <Type>Corner</Type>
+                        </Item>
+                        <Item>
+                            <Direction>2</Direction>
+                            <Type>TCrossing</Type>
+                        </Item>
+                        <Item>
+                            <Direction>1</Direction>
+                            <Type>End</Type>
+                        </Item>
+                        <Item>
+                            <Type>Corner</Type>
+                        </Item>
+                        <Item>
+                            <Direction>1</Direction>
+                            <Type>Mid</Type>
+                        </Item>
+                        <Item>
+                            <Direction>1</Direction>
+                            <Type>TCrossing</Type>
+                        </Item>
+                        <Item>
+                            <Direction>3</Direction>
+                            <Type>Corner</Type>
+                        </Item>
+                        <Item>
+                            <Type>TCrossing</Type>
+                        </Item>
+                        <Item>
+                            <Direction>3</Direction>
+                            <Type>TCrossing</Type>
+                        </Item>
+                        <Item>
+                            <Type>Crossing</Type>
+                        </Item>
+                    </InfluencedVariationDirection>
+                    <AssociatedRegions>Moderate;Colony01</AssociatedRegions>
+                    <BuildingBlockPool>
+                    <DontCare>
+                        <Pool>
+                        <Item />
+                        </Pool>
+                    </DontCare>
+                    <Corner>
+                        <Pool>
+                        <Item>
+                            <Variation>2</Variation>
+                        </Item>
+                        </Pool>
+                    </Corner>
+                    <Mid>
+                        <Pool>
+                        <Item />
+                        <Item>
+                            <DirectionOffet>2</DirectionOffet>
+                        </Item>
+                        <Item>
+                            <Variation>5</Variation>
+                        </Item>
+                        <Item>
+                            <DirectionOffet>2</DirectionOffet>
+                            <Variation>5</Variation>
+                        </Item>
+                        </Pool>
+                    </Mid>
+                    <TCrossing>
+                        <Pool>
+                        <Item>
+                            <DirectionOffet>3</DirectionOffet>
+                            <Variation>4</Variation>
+                        </Item>
+                        </Pool>
+                    </TCrossing>
+                    <Crossing>
+                        <Pool>
+                        <Item>
+                            <Variation>3</Variation>
+                        </Item>
+                        </Pool>
+                    </Crossing>
+                    <End>
+                        <Pool>
+                        <Item>
+                            <DirectionOffet>3</DirectionOffet>
+                            <Variation>1</Variation>
+                        </Item>
+                        </Pool>
+                    </End>
+                    </BuildingBlockPool>
+                    <VariationIcons>
+                    <Item>
+                        <IconFilename>data/ui/2kimages/main/3dicons/ornaments/palace_ornament/icon_ornament_straight_promenade.png</IconFilename>
+                    </Item>
+                    <Item>
+                        <IconFilename>data/ui/2kimages/main/3dicons/ornaments/palace_ornament/icon_ornament_promenade_end.png</IconFilename>
+                    </Item>
+                    <Item>
+                        <IconFilename>data/ui/2kimages/main/3dicons/ornaments/palace_ornament/icon_ornament_promenade_angle.png</IconFilename>
+                    </Item>
+                    <Item>
+                        <IconFilename>data/ui/2kimages/main/3dicons/ornaments/palace_ornament/icon_ornament_promenade_crossing.png</IconFilename>
+                    </Item>
+                    <Item>
+                        <IconFilename>data/ui/2kimages/main/3dicons/ornaments/palace_ornament/icon_ornament_promenade_junction.png</IconFilename>
+                    </Item>
+                    <Item>
+                        <IconFilename>data/ui/2kimages/main/3dicons/ornaments/palace_ornament/icon_ornament_straight_promenade_variation.png</IconFilename>
+                    </Item>
+                    </VariationIcons>
                 </Building>
-                <Cost />
-                <Selection />
-                <Object />
-                <Constructable />
+                <Blocking>
+                    <HidePropsRadius>0</HidePropsRadius>
+                    <DeletePropsRadius>0</DeletePropsRadius>
+                    <GroundDecalAsset>24774</GroundDecalAsset>
+                    <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
+                    <DisableDefaultTrafficFeedback>0</DisableDefaultTrafficFeedback>
+                </Blocking>
+                <Cost>
+                    <Costs>
+                        <Item>
+                            <Ingredient>1010017</Ingredient>
+                            <Amount>50</Amount>
+                        </Item>
+                    </Costs>
+                    <ItemsPerCost>4</ItemsPerCost>
+                </Cost>
+                <Object>
+                    <Variations>
+                        <Item>
+                            <Filename>data/dlc04/graphics/buildings/ornamental/uplay_props/up_dlc04_props_system_1x1_street_straight_01.cfg</Filename>
+                        </Item>
+                        <Item>
+                            <Filename>data/dlc04/graphics/buildings/ornamental/uplay_props/up_dlc04_props_system_1x1_street_end_01.cfg</Filename>
+                        </Item>
+                        <Item>
+                            <Filename>data/dlc04/graphics/buildings/ornamental/uplay_props/up_dlc04_props_system_1x1_street_corner_01.cfg</Filename>
+                        </Item>
+                        <Item>
+                            <Filename>data/dlc04/graphics/buildings/ornamental/uplay_props/up_dlc04_props_system_1x1_street_cross_01.cfg</Filename>
+                        </Item>
+                        <Item>
+                            <Filename>data/dlc04/graphics/buildings/ornamental/uplay_props/up_dlc04_props_system_1x1_street_tee_01.cfg</Filename>
+                        </Item>
+                        <Item>
+                            <Filename>data/dlc04/graphics/buildings/ornamental/uplay_props/up_dlc04_props_system_1x1_street_straight_02.cfg</Filename>
+                        </Item>
+                    </Variations>
+                </Object>
                 <Mesh />
-                <SoundEmitter />
-                <Locked>
-                    <DefaultLockedState>0</DefaultLockedState>
-                </Locked>
+                <Selection>
+                    <OnSelection>
+                        <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                        <Values>
+                            <ActionList />
+                        </Values>
+                    </OnSelection>
+                </Selection>
+                <Text>
+                    <LocaText>
+                        <English>
+                            <Text>Paved Street</Text>
+                            <Status>Exported</Status>
+                        </English>
+                    </LocaText>
+                    <LineID>4224</LineID>
+                </Text>
+                <Constructable />
+                <Locked />
+                <SoundEmitter>
+                    <DestroySounds>
+                        <Item>
+                            <Sound>200777</Sound>
+                        </Item>
+                    </DestroySounds>
+                    <ConstructionSounds>
+                        <BuildSuccessful>
+                            <Item>
+                                <Sound>215917</Sound>
+                            </Item>
+                        </BuildSuccessful>
+                    </ConstructionSounds>
+                    <ConstructionStreetSounds>
+                        <BuildAddWaypoint>
+                            <Item>
+                                <Sound>215920</Sound>
+                            </Item>
+                        </BuildAddWaypoint>
+                    </ConstructionStreetSounds>
+                    <MaterialType>Street_Brick</MaterialType>
+                </SoundEmitter>
                 <FeedbackController />
-                <Ornament />
+                <Infolayer />
+                <BuildingModule>
+                    <PlazaSize>20</PlazaSize>
+                    <ModuleType>Main</ModuleType>
+                </BuildingModule>
                 <AmbientMoodProvider />
-                <Pausable />
             </Values>
         </Asset>
     </ModOp>
